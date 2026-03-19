@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshu & Vikas | The Wedding Celebration</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">
+            <span class="initials">R & V</span>
+            <div class="mandala-ring"></div>
+        </div>
+    </div>
+
+    <!-- Music Toggle -->
+    <button id="music-btn" aria-label="Toggle Music">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="music-icon"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+        <span class="music-waves"></span>
+    </button>
+    <!-- Placeholder Audio: royalty free soothing music -->
+    <audio id="bg-music" loop autoplay>
+        <source src="./assets/jay_ganesh_deva.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Navigation (Optional, keeping it clean with simple menu if needed, else mostly hero) -->
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div id="particles-js"></div>
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1500">
+            <div class="top-motif">
+                <!-- Elegant Heart Silhouette -->
+                <svg width="45" height="45" viewBox="0 0 24 24" fill="var(--gold)" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+            </div>
+            <h2 class="pre-title">We Are Getting Married</h2>
+            <h1 class="couple-names">Reshu <span>&</span> Vikas</h1>
+            <p class="wedding-date">April 29th, 2026</p>
+            
+            <div class="countdown" id="countdown">
+                <div class="time-box">
+                    <span id="days">00</span>
+                    <p>Days</p>
+                </div>
+                <div class="time-box">
+                    <span id="hours">00</span>
+                    <p>Hours</p>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">00</span>
+                    <p>Min</p>
+                </div>
+                <div class="time-box">
+                    <span id="seconds">00</span>
+                    <p>Sec</p>
+                </div>
+            </div>
+            
+            <a href="#events" class="btn primary-btn">Discover More</a>
+        </div>
+    </section>
+
+    <!-- Wedding Events Section -->
+    <section class="events section-padding bg-green" id="events">
+        <!-- Mandalas for Background -->
+        <div class="mandala corner-tl"></div>
+        <div class="mandala corner-tr"></div>
+        <div class="mandala corner-bl"></div>
+        <div class="mandala corner-br"></div>
+        
+        <div class="container">
+            <div class="section-title text-center light" data-aos="fade-up">
+                <h2>Wedding Events</h2>
+                <div class="title-divider gold"></div>
+                <p>Join us in our celebrations</p>
+            </div>
+            
+            <div class="event-cards">
+                <!-- Event 1: Arrival of Barat -->
+                <div class="event-card" data-aos="fade-up" data-aos-delay="100" style="background: linear-gradient(rgba(255, 255, 240, 0.65), rgba(255, 255, 240, 0.65)), url('assets/barat_arrival.png') center/cover no-repeat;">
+                    <h3>Arrival of Barat</h3>
+                    <div class="event-details">
+                        <p><i class="icon-calendar"></i> Apr 29, 2026</p>
+                        <p><i class="icon-clock"></i> 6:00 PM</p>
+                        <p><i class="icon-location"></i> R.G. Sumangalam, Hapur</p>
+                    </div>
+                    <p class="event-desc">Join us in the grand welcome as the groom arrives with the Barat.</p>
+                </div>
+
+                <!-- Event 2: Dinner -->
+                <div class="event-card" data-aos="fade-up" data-aos-delay="300" style="background: linear-gradient(rgba(255, 255, 240, 0.65), rgba(255, 255, 240, 0.65)), url('assets/wedding_dinner.png') center/cover no-repeat;">
+                    <h3>Wedding Dinner</h3>
+                    <div class="event-details">
+                        <p><i class="icon-calendar"></i> Apr 29, 2026</p>
+                        <p><i class="icon-clock"></i> 8:00 PM</p>
+                        <p><i class="icon-location"></i> R.G. Sumangalam, Hapur</p>
+                    </div>
+                    <p class="event-desc">Relish a delightful feast with family and friends celebrating our joy.</p>
+                </div>
+
+                <!-- Event 3: Vidai -->
+                <div class="event-card" data-aos="fade-up" data-aos-delay="500" style="background: linear-gradient(rgba(255, 255, 240, 0.65), rgba(255, 255, 240, 0.65)), url('assets/vidai.png') center/cover no-repeat;">
+                    <h3>Vidai</h3>
+                    <div class="event-details">
+                        <p><i class="icon-calendar"></i> Apr 30, 2026</p>
+                        <p><i class="icon-clock"></i> 5:00 AM</p>
+                        <p><i class="icon-location"></i> R.G. Sumangalam, Hapur</p>
+                    </div>
+                    <p class="event-desc">The emotional farewell as the bride steps into her new wonderful life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Invitation & RSVP Section -->
+    <section class="invitation-rsvp" id="rsvp">
+        <div class="split-layout">
+            <!-- Invitation Side -->
+            <div class="invitation-side" data-aos="fade-right">
+                <div class="invite-card">
+                    <img src="assets/invitation_bg.png" alt="Traditional Wedding Card Texture" class="invite-bg">
+                    <div class="invite-content">
+                        <img src="assets/ganesha.png" class="ganesha-icon" alt="Lord Ganesha" style="width: 80px; margin-bottom: 20px; object-fit: contain;">
+                        <h4>!! Shri Ganeshaya Namah !!</h4>
+                        <p class="invite-text" style="font-size: 0.95rem;"><strong>Mrs. Bijendri Devi & Mr. Dharmendra Kumar</strong><br>Solicit your blessings and request the pleasure of your company to celebrate the auspicious occasion of the wedding of their beloved daughter</p>
+                        <h2 class="elegant-names" style="margin: 10px 0;">Reshu</h2>
+                        <p class="invite-text" style="font-size: 0.8rem; margin-top: -10px;">(Grand D/o Late Smt. Ramwati Devi & Late Dr. Jeet Singh)</p>
+                        <h4 style="margin: 15px 0; font-family: var(--font-cursive); font-size: 1.5rem; color: var(--gold-light);">With</h4>
+                        <h2 class="elegant-names" style="margin: 10px 0;">Vikas</h2>
+                        <p class="invite-text" style="font-size: 0.8rem; margin-top: -10px;">(S/o Late Mrs. Shakuntla Devi & Mr. Rajkumar)<br>(R/o Indergarhi, Hapur)</p>
+                        <div class="separator-dots" style="margin: 10px 0;">•••</div>
+                        <p class="invite-date">Wednesday, 29th April 2026</p>
+                        <p class="invite-venue"><strong>R.G. Sumangalam</strong><br>Near Domi Railway Crossing, Swarg Ashram Road, Hapur</p>
+                        
+                        <div style="font-size: 0.8rem; margin-top: 20px; display: flex; justify-content: space-between; text-align: left; padding-top: 15px; border-top: 1px solid rgba(212, 175, 55, 0.4);">
+                            <div>
+                                <strong>R.S.V.P:</strong><br>Himanshu<br>Rajat, Dhruv
+                            </div>
+                            <div style="text-align: right;">
+                                <strong>W.B.C From:</strong><br>Shri Ramotar Ji<br>Shri Jaikishan Ji<br>Dr. Rajbeer Singh<br>Dr. Davendra Kumar<br>Ghanshyam Das
+                            </div>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div id="card-action-btns" style="margin-top: 30px; display: flex; justify-content: center; gap: 15px;">
+                            <a href="#" class="btn primary-btn" style="padding: 10px 20px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; text-decoration: none;" onclick="downloadCard(); return false;" title="Save Wedding Card Image">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                                Download
+                            </a>
+                            <button onclick="shareCard(); return false;" class="btn primary-btn" style="padding: 10px 20px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px; border: 2px solid transparent; font-family: inherit;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                                Share
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location Map Side -->
+            <div class="rsvp-side map-side" data-aos="fade-left">
+                <div class="rsvp-form-container" style="max-width: 100%; width: 100%;">
+                    <div class="section-title">
+                        <h2>Location Map</h2>
+                        <p>Route to R.G. Sumangalam</p>
+                    </div>
+                    <div style="width: 100%; height: 350px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border: 2px solid var(--gold);">
+                        <iframe 
+                            src="https://maps.google.com/maps?q=R.G.+Sumangalam,+Near+Domi+Railway+Crossing,+Swarg+Ashram+Road,+Hapur&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <div style="margin-top: 25px; text-align: center;">
+                        <a href="https://www.google.com/maps/place/rg+sumangalam+hapur/data=!4m2!3m1!1s0x390c844b5e01c909:0xebd7385ad5d1a77?sa=X&ved=1t:242&ictx=111" target="_blank" class="btn primary-btn submit-btn" style="text-decoration: none; display: inline-block;">Get Directions To Venue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Masonry) -->
+    <section class="gallery section-padding bg-ivory" id="gallery">
+        <div class="container">
+            <div class="section-title text-center" data-aos="fade-up">
+                <h2>Captured Moments</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="gallery-grid">
+                <!-- Couple's Captured Moments -->
+                <div class="gallery-item wide" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="assets/captured_moments/085A7957.JPG" alt="Gallery Moment 1">
+                    <div class="overlay"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></span></div>
+                </div>
+                <div class="gallery-item wide" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="assets/captured_moments/085A7962.JPG" alt="Gallery Moment 2">
+                    <div class="overlay"><span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h2 class="elegant-names signature">Reshu & Vikas</h2>
+            <p style="font-style: italic; max-width: 600px; margin: 0 auto; color: var(--gold-light);">"Nannhe Nannhe Pav Hamare Kaise Aaye Bulaane Ko<br>Hamari Didi Ki Shadi Main Bhul Na Jana Aane Ko"<br><br>- Deepali, Nannu</p>
+            <p class="copyright">&copy; Created By Himanshu</p>
+        </div>
+    </footer>
+
+    <!-- Particles.js for Hero Section -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- AOS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- html2canvas for Download feature -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
